@@ -1,12 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>indext</title>
-    <link rel="stylesheet" href="../src/style/input.css">
+    <title>index</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="../src/style/index.css">
 </head>
-<body>
-    <button class="bg-slate-500">hello</button>
+
+<body class="w-screen" style="background-color: #141514;">
+    <!-- /*start all items for header*/ -->
+    <header class="w-full h-16 bg-[#282727] flex justify-center items-center">
+        <div class="choose capitalize w-full text-white flex justify-center gap-8">
+            <a href="#" class="cursor-pointer"> <span class="home">home</span></a>
+            <a href="#" class="cursor-pointer"> <span class="form">log/sign up</span></a>
+            <a href="#" class="cursor-pointer"> <span class="product">products</span></a>
+            <a href="#" class="cursor-pointer"> <span class="about">about us</span></a>
+        </div>
+    </header>
+    <!-- /*end all items for header*/ -->
+    <!-- start section for the slider -->
+    <section class="container">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <!-- start the pictures in the slider -->
+                <img src="images/s1.webp" alt="" class="img-fluid">
+                <img src="images/s2.webp" alt="" class="img-fluid">
+                <img src="images/s3.avif" alt="" class="img-fluid">
+                <!-- end the pictures in the slider -->
+                <!-- start buttons in slider with smooth and low opacity style -->
+                <div class="slider-nav">
+                    <a href="#slide1" data-slide="0"></a>
+                    <a href="#slide2" data-slide="1"></a>
+                    <a href="#slide3" data-slide="2"></a>
+                </div>
+                <!-- end buttons in slider with smooth and low opacity style -->
+            </div>
+        </div>
+    </section>
+    <!-- end section for the slider -->
+    <div class="header-pr w-full h-14 flex justify-center items-center">
+        <h3 class="capitalize text-[25pt] font-mono text-white">our products</h3>
+    </div>
+    <!-- start section for our products -->
+    <section class="our-product w-full h-auto p-7 flex flex-wrap justify-content-center align-items-center">
+        <!-- start one product -->
+
+        <div class="card w-80">
+            <img class="card-img-top w-72" src="images/mvp.png" alt="Card image cap">
+            <div class="card-body">
+                <b class="title capitalize  text-white">air jordan</b>
+                <p class="card-text  text-white">Some quick example text to build on the card title and make up the bulk
+                    of the
+                    card's content.</p>
+            </div>
+            <div class="btn-click">
+                <button
+                    class="capitalize w-24 bg-[#d56647] text-white h-8 rounded-full transition-transform duration-1000 hover: hover:scale-110">
+                    buy
+                </button>
+
+                <!-- دکمه افزودن به لیست علاقه‌مندی‌ها -->
+                <button
+                    class="bg-[#996633] capitalize flex justify-center items-center w-40 h-8 rounded-full text-white text-lg transition-transform duration-1000 hover:scale-110">
+                    add to wishlist
+                    <svg fill="#ffffff" height="15px" width="15px" version="1.1" id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 471.701 471.701" xml:space="preserve" class="ml-2">
+                        <g>
+                            <path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1  
+                                            c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3  
+                                            l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4  
+                                            C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3  
+                                            s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4  
+                                            c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3  
+                                            C444.801,187.101,434.001,213.101,414.401,232.701z" />
+                        </g>
+                    </svg>
+                </button>
+
+            </div>
+        </div>
+        <!-- end one product --><!-- start one product -->
+
+        <div class="card w-80">
+            <img class="card-img-top w-72" src="images/mvp.png" alt="Card image cap">
+            <div class="card-body">
+                <b class="title capitalize  text-white">air jordan</b>
+                <p class="card-text  text-white">Some quick example text to build on the card title and make up the bulk
+                    of the
+                    card's content.</p>
+            </div>
+            <div class="btn-click">
+                <button
+                    class="capitalize w-24 bg-[#d56647] text-white h-8 rounded-full transition-transform duration-1000 hover: hover:scale-110">
+                    buy
+                </button>
+
+                <!-- دکمه افزودن به لیست علاقه‌مندی‌ها -->
+                <button
+                    class="bg-[#996633] capitalize flex justify-center items-center w-40 h-8 rounded-full text-white text-lg transition-transform duration-1000 hover:scale-110">
+                    add to wishlist
+                    <svg fill="#ffffff" height="15px" width="15px" version="1.1" id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 471.701 471.701" xml:space="preserve" class="ml-2">
+                        <g>
+                            <path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1  
+                                                            c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3  
+                                                            l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4  
+                                                            C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3  
+                                                            s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4  
+                                                            c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3  
+                                                            C444.801,187.101,434.001,213.101,414.401,232.701z" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- end one product --><!-- start one product -->
+        <div class="card w-80">
+            <img class="card-img-top w-72" src="images/mvp.png" alt="Card image cap">
+            <div class="card-body">
+                <b class="title capitalize text-white">air jordan</b>
+                <p class="card-text  text-white">Some quick example text to build on the card title and make up the bulk
+                    of the
+                    card's content.</p>
+            </div>
+            <div class="btn-click">
+                <button
+                    class="capitalize w-24 bg-[#d56647] text-white h-8 rounded-full transition-transform duration-1000 hover: hover:scale-110">
+                    buy
+                </button>
+
+                <!-- دکمه افزودن به لیست علاقه‌مندی‌ها -->
+                <button
+                    class="bg-[#996633] capitalize flex justify-center items-center w-40 h-8 rounded-full text-white text-lg transition-transform duration-1000 hover:scale-110">
+                    add to wishlist
+                    <svg fill="#ffffff" height="15px" width="15px" version="1.1" id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 471.701 471.701" xml:space="preserve" class="ml-2">
+                        <g>
+                            <path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1  
+                            c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3  
+                            l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4  
+                            C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3  
+                            s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4  
+                            c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3  
+                            C444.801,187.101,434.001,213.101,414.401,232.701z" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- end one product --><!-- start one product -->
+
+        <div class="card w-80">
+            <img class="card-img-top w-72" src="images/mvp.png" alt="Card image cap">
+            <div class="card-body">
+                <b class="title capitalize  text-white">air jordan</b>
+                <p class="card-text  text-white">Some quick example text to build on the card title and make up the bulk
+                    of the
+                    card's content.</p>
+            </div>
+            <div class="btn-click">
+                <!-- دکمه خرید -->
+                <button
+                    class="capitalize w-24 bg-[#d56647] text-white h-8 rounded-full transition-transform duration-1000 hover: hover:scale-110">
+                    buy
+                </button>
+
+                <!-- دکمه افزودن به لیست علاقه‌مندی‌ها -->
+                <button
+                    class="bg-[#996633] capitalize flex justify-center items-center w-40 h-8 rounded-full text-white text-lg transition-transform duration-1000 hover:scale-110">
+                    add to wishlist
+                    <svg fill="#ffffff" height="15px" width="15px" version="1.1" id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 471.701 471.701" xml:space="preserve" class="ml-2">
+                        <g>
+                            <path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1  
+                            c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3  
+                            l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4  
+                            C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3  
+                            s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4  
+                            c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3  
+                            C444.801,187.101,434.001,213.101,414.401,232.701z" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- end one product -->
+    </section>>
+    <!-- end section for our products -->
+
+    <script>
+        document.querySelectorAll('.slider-nav a').forEach((navButton, index) => {
+            navButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                document.querySelector('.slider').scrollTo({
+                    left: document.querySelector('.slider').offsetWidth * index,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
+
 </html>

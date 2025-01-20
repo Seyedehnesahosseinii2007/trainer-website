@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* جلوگیری از اسکرول افقی */
+}
+
+/*header*/
+.home,
+.about,
+.form,
+.product {
+    font-size: 15pt;
+    position: relative;
+}
+
+.home::after,
+.about::after,
+.product::after,
+.form::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -7px;
+    position: absolute;
+    background: linear-gradient(to right, #FF9900, #CC6600);
+    transition: ease-in 700ms;
+}
+
+.home:hover::after,
+.about:hover::after,
+.form:hover::after,
+.product:hover::after {
+    width: 100%;
+    transition: ease 700ms;
+}
+
+.container {
+    padding: 2rem;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.75rem;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #ffff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+.our-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card {
+    width: 310px;
+    height: 590px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 2px #CC6600 solid;
+    text-align: center;
+    border-radius: 20px;
+    padding: 0;
+    background-color: rgb(52, 52, 52);
+    /* Ensure no padding inside the card */
+}
+
+.card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    /* Ensure the image fits the top corners */
+}
+
+.card-body {
+    padding: 1rem;
+    flex: 1;
+}
+
+.btn-click {
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center,space-between;
+    padding: 0.5rem;
+    bottom: 5px;
+    position: relative;
+}
