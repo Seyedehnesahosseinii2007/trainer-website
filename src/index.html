@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="../dist/output.css">
     <!-- link to the style file -->
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="../src/style/index.css">
 </head>
 
@@ -25,24 +25,20 @@
     </header>
     <!-- /*end all items for header*/ -->
     <!-- start section for the slider -->
-    <section class="container flex justify-center items-center">
-        <div class="slider-wrapper">
-            <div class="slider">
-                <!-- start the pictures in the slider -->
-                <img src="images/s1.webp" alt="" class="img-fluid">
-                <img src="images/s2.webp" alt="" class="img-fluid">
-                <img src="images/s3.avif" alt="" class="img-fluid">
-                <!-- end the pictures in the slider -->
-                <!-- start buttons in slider with smooth and low opacity style -->
-                <div class="slider-nav">
-                    <a href="#slide1" data-slide="0"></a>
-                    <a href="#slide2" data-slide="1"></a>
-                    <a href="#slide3" data-slide="2"></a>
-                </div>
-                <!-- end buttons in slider with smooth and low opacity style -->
-            </div>
+    <div class="w3-content w3-display-container mt-7" style="width:800px">
+        <img class="mySlides" style="width:800px; height: 540px;" src="../src/images/s1.webp" style="width:100%">
+        <img class="mySlides" style="width:800px; height: 500px;" src="../src/images/s2.webp" style="width:100%">
+        <img class="mySlides" style="width:800px; height: 500px;" src="../src/images/s3.avif" style="width:100%">
+        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
+            style="width:100%">
+            <div class="w3-left w3-hover-text-khaki bg-slate-700 w-6" onclick="plusDivs(-1)">&#10094;</div>
+            <div class="w3-right w3-hover-text-khak  bg-slate-700 w-6" onclick="plusDivs(1)">&#10095;</div>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
         </div>
-    </section>
+    </div>
+
     <!-- end section for the slider -->
     <div class="header-pr w-full h-14 flex justify-center items-center">
         <h3 class="capitalize text-[25pt] text-white">our products</h3>
@@ -67,7 +63,7 @@
 
                 <!-- دکمه افزودن به لیست علاقه‌مندی‌ها -->
                 <button
-                    class="bg-[#996633] capitalize flex justify-center items-center w-40 h-8 rounded-full text-white text-lg transition-transform duration-1000 hover:scale-110">
+                    class="bg-[#996633] capitalize flex justify-center items-center w-40 h-8 rounded-full text-white text-sm transition-transform duration-1000 hover:scale-110">
                     add to wishlist
                     <svg fill="#ffffff" height="15px" width="15px" version="1.1" id="Capa_1"
                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -104,7 +100,7 @@
 
                 <!-- دکمه افزودن به لیست علاقه‌مندی‌ها -->
                 <button
-                    class="bg-[#996633] capitalize flex justify-center items-center w-40 h-8 rounded-full text-white text-lg transition-transform duration-1000 hover:scale-110">
+                    class="bg-[#996633] capitalize flex justify-center items-center w-40 h-8 rounded-full text-white text-sm transition-transform duration-1000 hover:scale-110">
                     add to wishlist
                     <svg fill="#ffffff" height="15px" width="15px" version="1.1" id="Capa_1"
                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -139,7 +135,7 @@
 
                 <!-- دکمه افزودن به لیست علاقه‌مندی‌ها -->
                 <button
-                    class="bg-[#996633] capitalize flex justify-center items-center w-40 h-8 rounded-full text-white text-lg transition-transform duration-1000 hover:scale-110">
+                    class="bg-[#996633] capitalize flex justify-center items-center w-40 h-8 rounded-full text-white text-sm transition-transform duration-1000 hover:scale-110">
                     add to wishlist
                     <svg fill="#ffffff" height="15px" width="15px" version="1.1" id="Capa_1"
                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -176,7 +172,7 @@
 
                 <!-- دکمه افزودن به لیست علاقه‌مندی‌ها -->
                 <button
-                    class="bg-[#996633] capitalize flex justify-center items-center w-40 h-8 rounded-full text-white text-lg transition-transform duration-1000 hover:scale-110">
+                    class="bg-[#996633] capitalize flex justify-center items-center w-40 h-8 rounded-full text-white text-sm transition-transform duration-1000 hover:scale-110">
                     add to wishlist
                     <svg fill="#ffffff" height="15px" width="15px" version="1.1" id="Capa_1"
                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -301,17 +297,32 @@
     <!-- end footer and details -->
 
     <script>
-        document.querySelectorAll('.slider-nav a').forEach((navButton, index) => {
-            navButton.addEventListener('click', (e) => {
-                e.preventDefault();
-                document.querySelector('.slider').scrollTo({
-                    left: document.querySelector('.slider').offsetWidth * index,
-                    behavior: 'smooth'
-                });
-            });
-        });
+        var slideIndex = 1;
+        showDivs(slideIndex);
 
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
 
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-white", "");
+            }
+            x[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " w3-white";
+        }
 
         document.addEventListener('DOMContentLoaded', function () {
             const partOne = document.querySelector('.part-one-for-new-collection');
