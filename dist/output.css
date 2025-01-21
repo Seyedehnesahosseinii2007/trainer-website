@@ -715,12 +715,24 @@ video {
   clear: none;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .ml-2 {
   margin-left: 0.5rem;
 }
 
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
 }
 
 .box-border {
@@ -822,6 +834,10 @@ video {
   display: none;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
 .h-14 {
   height: 3.5rem;
 }
@@ -830,8 +846,24 @@ video {
   height: 4rem;
 }
 
+.h-4 {
+  height: 1rem;
+}
+
 .h-8 {
   height: 2rem;
+}
+
+.h-\[18rem\] {
+  height: 18rem;
+}
+
+.h-\[2\.5rem\] {
+  height: 2.5rem;
+}
+
+.h-\[600px\] {
+  height: 600px;
 }
 
 .h-auto {
@@ -854,6 +886,18 @@ video {
   width: 20rem;
 }
 
+.w-\[14rem\] {
+  width: 14rem;
+}
+
+.w-\[22rem\] {
+  width: 22rem;
+}
+
+.w-\[27rem\] {
+  width: 27rem;
+}
+
 .w-\[this-is\\\\\] {
   width: this-is\\;
 }
@@ -874,12 +918,16 @@ video {
   width: 100vw;
 }
 
-.w-4 {
+.w-\[1rem\] {
   width: 1rem;
 }
 
-.w-44 {
-  width: 11rem;
+.w-\[17rem\] {
+  width: 17rem;
+}
+
+.w-\[12rem\] {
+  width: 12rem;
 }
 
 .flex-shrink {
@@ -1404,6 +1452,18 @@ video {
   justify-items: stretch;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.gap-7 {
+  gap: 1.75rem;
+}
+
 .gap-8 {
   gap: 2rem;
 }
@@ -1728,6 +1788,10 @@ video {
   border-radius: 9999px;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .rounded-b {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -1794,6 +1858,10 @@ video {
   border-width: 1px;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 .border-x {
   border-left-width: 1px;
   border-right-width: 1px;
@@ -1850,6 +1918,11 @@ video {
 
 .border-none {
   border-style: none;
+}
+
+.border-\[\#FFCC99\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 204 153 / var(--tw-border-opacity, 1));
 }
 
 .bg-\[\#282727\] {
@@ -1982,6 +2055,10 @@ video {
      object-fit: scale-down;
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
 .p-7 {
   padding: 1.75rem;
 }
@@ -2057,25 +2134,25 @@ video {
   vertical-align: super;
 }
 
-.font-sans {
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+.text-\[20pt\] {
+  font-size: 20pt;
 }
 
-.font-mono {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+.text-\[22pt\] {
+  font-size: 22pt;
 }
 
-.text-\[15pt\] {
-  font-size: 15pt;
+.text-\[25pt\] {
+  font-size: 25pt;
+}
+
+.text-\[37pt\] {
+  font-size: 37pt;
 }
 
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-
-.text-\[25pt\] {
-  font-size: 25pt;
 }
 
 .font-bold {

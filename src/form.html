@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in</title>
+    <!-- link to the tailwind -->
+    <link rel="stylesheet" href="../dist/output.css">
+    <!-- link to the style file -->
+    <link rel="stylesheet" href="../src/style/form.css">
+</head>
+
+<body class="w-screen" style="background-color: #141514;">
+    <form action="">
+        <h2 class="text-white mt-6 capitalize ">enter your details</h2>
+        <div class="for-username">
+            <div class="username-inp">
+                <!-- input for username -->
+                <input class="w-[17rem] h-[2.5rem]" type="text" name="username" placeholder="username" id="username">
+            </div>
+            <div class="password-inp">
+                <!-- input for password -->
+
+                <input class="w-[12rem] h-[2.5rem]" pattern="^(?=.*[\W_]).{8,12}$" required type="password"
+                    name="password" placeholder="password" id="password">
+            </div>
+        </div>
+        <div class="button-for-log-and-sign mb-6">
+            <!-- log in button -->
+            <div class="login">
+                <button class="log text-white ">Log in</button>
+            </div>
+
+        </div>
+    </form>
+</body>
+
+</html>
